@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>SNAP Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main" class="main w-full capitalize">
+      <!-- navbar for desktop start -->
+      <nav
+        class="h-16 flex items-center justify-between mx-5 text-gray-600 md:mx-10 w-auto"
+      >
+        <div class="flex justify-between space-x-10">
+          <!-- logo start desktop -->
+          <div>
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+
+          <!-- list  -->
+          <ul
+            class="hidden md:flex items-center space-x-10 text-sm font-semibold"
+          >
+            <li
+              id="open3"
+              class="flex items-center cursor-pointer hover:text-black"
+            >
+              Features<span
+                ><div class="pl-2">
+                  <img
+                    id="arrowDown3"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrowDown1"
+                  />
+                  <img
+                    id="arrowUp3"
+                    src="./images/icon-arrow-up.svg"
+                    alt="arrowUp1"
+                    class="hidden"
+                  /></div
+              ></span>
+            </li>
+            <ul
+              id="doc3"
+              class="fixed top-12 left-20 bg-white hidden rounded-xl px-8 py-4 space-y-3 shadow-xl"
+            >
+              <li class="flex items-center justify-start space-x-2">
+                <div><img src="./images/icon-todo.svg" alt="" /></div>
+                <div>Todo List</div>
+              </li>
+              <li class="flex items-center justify-start space-x-2">
+                <div><img src="./images/icon-calendar.svg" alt="" /></div>
+                <div>calendar</div>
+              </li>
+              <li class="flex items-center justify-start space-x-2">
+                <div><img src="./images/icon-reminders.svg" alt="" /></div>
+                <div>reminders</div>
+              </li>
+              <li class="flex items-center justify-start space-x-2">
+                <div><img src="./images/icon-planning.svg" alt="" /></div>
+                <div>planning</div>
+              </li>
+            </ul>
+
+            <li
+              id="open4"
+              class="flex items-center cursor-pointer hover:text-black"
+            >
+              Company
+              <span
+                ><div class="pl-2">
+                  <img
+                    id="arrowDown4"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrowDown2"
+                  />
+                  <img
+                    id="arrowUp4"
+                    src="./images/icon-arrow-up.svg"
+                    alt="arrowUp4"
+                    class="hidden"
+                  /></div
+              ></span>
+            </li>
+            <ul
+              id="doc4"
+              class="fixed top-12 left-60 p-8 bg-white rounded-xl space-y-2 hidden px-6 py-4 shadow-xl"
+            >
+              <li>history</li>
+              <li>our team</li>
+              <li>blog</li>
+            </ul>
+
+            <li class="cursor-pointer hover:text-black">Careers</li>
+            <li class="cursor-pointer hover:text-black">About</li>
+          </ul>
+        </div>
+
+        <!-- hamberger start -->
+        <div class="flex md:hidden z-20 opacity-100 cursor-pointer">
+          <img id="menu" src="./images/icon-menu.svg" alt="" class="z-20" />
+          <img
+            id="closeMenu"
+            src="./images/icon-close-menu.svg"
+            alt=""
+            class="hidden z-20"
+          />
+        </div>
+        <!-- hamberger end -->
+
+        <!-- buttons -->
+        <div class="hidden md:flex items-center space-x-5 text-xs">
+          <div class="cursor-pointer">Login</div>
+          <div class="border cursor-pointer border-black rounded-xl px-4 py-2">
+            Register
+          </div>
+        </div>
+        <!-- buttons -->
+      </nav>
+      <!-- navbar for desktop end -->
+
+      <!-- for mobile hamburger start -->
+      <div
+        id="items"
+        class="hidden md:hidden text-lg font-semibold text-gray-600 capitalize"
+      >
+        <div class="w-2/3 sm:1/2 pt-16 h-screen fixed top-0 right-0 bg-white">
+          <ul class="space-y-5 pl-6">
+            <li id="open1" class="flex items-center cursor-pointer">
+              Features
+
+              <span
+                ><div class="pl-4">
+                  <img
+                    id="arrowDown1"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrowDown1"
+                  />
+                  <img
+                    id="arrowUp1"
+                    src="./images/icon-arrow-up.svg"
+                    alt="arrowUp1"
+                    class="hidden"
+                  /></div
+              ></span>
+            </li>
+            <ul id="doc1" class="w-full hidden space-y-5">
+              <li class="flex items-center justify-start pl-4 space-x-2">
+                <div><img src="./images/icon-todo.svg" alt="" /></div>
+                <div>Todo List</div>
+              </li>
+              <li class="flex items-center justify-start pl-4 space-x-2">
+                <div><img src="./images/icon-calendar.svg" alt="" /></div>
+                <div>calendar</div>
+              </li>
+              <li class="flex items-center justify-start pl-4 space-x-2">
+                <div><img src="./images/icon-reminders.svg" alt="" /></div>
+                <div>reminders</div>
+              </li>
+              <li class="flex items-center justify-start pl-4 space-x-2">
+                <div><img src="./images/icon-planning.svg" alt="" /></div>
+                <div>planning</div>
+              </li>
+            </ul>
+            <li id="open2" class="flex items-center cursor-pointer">
+              Company
+              <span
+                ><div class="pl-4">
+                  <img
+                    id="arrowDown2"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrowDown2"
+                  />
+                  <img
+                    id="arrowUp2"
+                    src="./images/icon-arrow-up.svg"
+                    alt="arrowUp2"
+                    class="hidden"
+                  /></div
+              ></span>
+            </li>
+            <ul id="doc2" class="space-y-5 hidden pl-5">
+              <li>history</li>
+              <li>our team</li>
+              <li>blog</li>
+            </ul>
+            <!-- <li>Company</li> -->
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <div class="text-center px-5 py-6 space-y-5">
+            <div class="cursor-pointer">Login</div>
+            <div class="border cursor-pointer border-black rounded-xl py-2">
+              Register
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- for mobile hamburger end -->
+
+      <!-- hero template start -->
+      <div class="content w-full h-screen text-center md:text-left">
+        <div
+          class="max-w-screen-lg mx-auto grid md:grid-cols-2 items-center justify-center h-full md:space-x-20"
+        >
+          <div class="md:hidden">
+            <img
+              src="./images/image-hero-mobile.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+          </div>
+          <div class="">
+            <h1 class="text-4xl md:text-6xl font-bold mt-4 md:mt-11">
+              Make remote work
+            </h1>
+            <p
+              class="text-xl text-gray-500 font-semibold mx-4 md:mx-0 mt-4 md:mt-11"
+            >
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button
+              class="bg-black text-white font-semibold py-3 px-8 rounded-xl border hover:border-black hover:bg-white hover:text-black mt-4 md:mt-11"
+            >
+              Learn more
+            </button>
+            <div
+              class="flex justify-evenly items-center md:space-x-1 md:space-x-5 mt-10 md:mt-28"
+            >
+              <img
+                src="./images/client-databiz.svg"
+                alt="client-databiz"
+                class="w-10 sm:w-20 md:w-full"
+              />
+              <img
+                src="./images/client-audiophile.svg"
+                alt="client-audiophile"
+                class="w-10 sm:w-20 md:w-full"
+              />
+              <img
+                src="./images/client-meet.svg"
+                alt="client-meet"
+                class="w-10 sm:w-20 md:w-full"
+              />
+              <img
+                src="./images/client-maker.svg"
+                alt="client-maker"
+                class="w-10 sm:w-20 md:w-full"
+              />
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <img
+              src="./images/image-hero-desktop.png"
+              alt=""
+              class="w-full hidden md:block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero template end -->
+
+    <div class="attribution text-center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/srgaurav2022" class="border-2-b pb-3"
+        >Gaurav</a
+      >.
+    </div>
+    <script defer>
+      const main = document.querySelector("#main");
+      const menu = document.querySelector("#menu");
+      const closeMenu = document.querySelector("#closeMenu");
+      const items = document.querySelector("#items");
+      const menuOpen1 = document.querySelector("#open1");
+      const docOpen1 = document.querySelector("#doc1");
+      const arrowDown1 = document.querySelector("#arrowDown1");
+      const arrowUp1 = document.querySelector("#arrowUp1");
+      const menuOpen2 = document.querySelector("#open2");
+      const docOpen2 = document.querySelector("#doc2");
+      const arrowDown2 = document.querySelector("#arrowDown2");
+      const arrowUp2 = document.querySelector("#arrowUp2");
+      const menuOpen3 = document.querySelector("#open3");
+      const docOpen3 = document.querySelector("#doc3");
+      const arrowDown3 = document.querySelector("#arrowDown3");
+      const arrowUp3 = document.querySelector("#arrowUp3");
+      const menuOpen4 = document.querySelector("#open4");
+      const docOpen4 = document.querySelector("#doc4");
+      const arrowDown4 = document.querySelector("#arrowDown4");
+      const arrowUp4 = document.querySelector("#arrowUp4");
+
+      menu.addEventListener("click", () => {
+        items.classList.remove("hidden");
+        menu.classList.add("hidden");
+        closeMenu.classList.remove("hidden");
+        // main.classList.add("blur-sm");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        items.classList.add("hidden");
+        menu.classList.remove("hidden");
+        closeMenu.classList.add("hidden");
+        // main.classList.remove("blur-sm");
+      });
+
+      menuOpen1.addEventListener("click", () => {
+        if (docOpen1.classList.contains("hidden")) {
+          docOpen1.classList.remove("hidden");
+          arrowDown1.classList.add("hidden");
+          arrowUp1.classList.remove("hidden");
+        } else {
+          docOpen1.classList.add("hidden");
+          arrowDown1.classList.remove("hidden");
+          arrowUp1.classList.add("hidden");
+        }
+      });
+
+      menuOpen2.addEventListener("click", () => {
+        if (docOpen2.classList.contains("hidden")) {
+          docOpen2.classList.remove("hidden");
+          arrowDown2.classList.add("hidden");
+          arrowUp2.classList.remove("hidden");
+        } else {
+          docOpen2.classList.add("hidden");
+          arrowDown2.classList.remove("hidden");
+          arrowUp2.classList.add("hidden");
+        }
+      });
+
+      menuOpen3.addEventListener("click", () => {
+        if (docOpen3.classList.contains("hidden")) {
+          docOpen3.classList.remove("hidden");
+          arrowDown3.classList.add("hidden");
+          arrowUp3.classList.remove("hidden");
+        } else {
+          docOpen3.classList.add("hidden");
+          arrowDown3.classList.remove("hidden");
+          arrowUp3.classList.add("hidden");
+        }
+      });
+
+      menuOpen4.addEventListener("click", () => {
+        if (docOpen4.classList.contains("hidden")) {
+          docOpen4.classList.remove("hidden");
+          arrowDown4.classList.add("hidden");
+          arrowUp4.classList.remove("hidden");
+        } else {
+          docOpen4.classList.add("hidden");
+          arrowDown4.classList.remove("hidden");
+          arrowUp4.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
